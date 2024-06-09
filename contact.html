@@ -1,3 +1,5 @@
+<!-- contact.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,11 +23,19 @@
     </header>
     <main>
         <section id="contact">
-            <h1>Contact Information</h1>
-            <p><strong>Address:</strong> Pimple Gurav, Pune, 411061, Maharashtra</p>
-            <p><strong>Mobile:</strong> +91-7219398388</p>
-            <p><strong>Email:</strong> <a href="mailto:prd23699@gmail.com">prd23699@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pavan-rokade-8b93b0267/">LinkedIn Profile</a></p>
+            <h1>Contact Me</h1>
+            <form class="contact-form" action="https://formspree.io/f/yourformid" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                
+                <input type="submit" value="Send Message">
+            </form>
         </section>
     </main>
     <footer>
